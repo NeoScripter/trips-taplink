@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             jsonFileName = 'main.json';
     }
 
-    jsonFileName = '../assets/json/' + jsonFileName;
+    jsonFileName = 'assets/json/' + jsonFileName;
     fetch(jsonFileName)
         .then(response => response.json())
         .then(data => {
