@@ -212,7 +212,8 @@ li {
 
 /* Main sectioin */
 
-#trip-list {
+#trip-list,
+.form-wrapper {
     max-width: var(--900);
     margin-inline: auto;
     border-radius: 0.5em;
@@ -228,7 +229,7 @@ li {
 }
 
 .trip-text-content {
-    padding: 1em;
+    padding: var(--16);
 }
 
 .trip-content img {
@@ -265,6 +266,73 @@ li {
     text-transform: uppercase;
     padding-block: 0.8em;
     cursor: pointer;
+}
+
+.trip-info-link:hover {
+    background-color: hsl(274, 48%, 66%);
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.call {
+    border: calc(var(--2) * 1.5) solid #fff;
+    background-color: hsl(125, 79%, 45%);
+    width: 100%;
+    margin-block: 1em;
+    border-radius: 0.5em;
+    background-image: url(../images/svgs/call.svg);
+    background-repeat: no-repeat;
+    background-size: var(--32);
+    background-position: var(--9) 50%;
+}
+
+.call:hover {
+    background-color: hsl(125, 79%, 60%);
+    border-radius: 0.5em;
+}
+
+.call-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.call-form h3 {
+    font-family: 'Roboto-Regular';
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    font-size: var(--19);
+    text-transform: uppercase;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.call-form input {
+    width: 100%;
+    font-size: var(--19);
+    padding: 0.6em;
+}
+
+.call-btn {
+    width: 100%;
+    background-color: #7D3DAE;
+    border: none;
+    border-radius: 0.5em;
+    padding-block: 1.2em;
+}
+.call-btn:hover {
+    border-radius: 0.5em;
+}
+
+.call-form p {
+    width: 90%;
+    text-align: center;
+    margin-inline: auto;
+    font-size: var(--14);
+    margin-bottom: 0.5em;
 }
 
 @media screen and (max-width: 850px) {
