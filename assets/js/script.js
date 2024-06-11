@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     function setUpBurgerMenuToggler(menuElementName) {
-        const burgerMenu = document.querySelector(menuElementName);
+        const burgerMenuWrapper = document.querySelector(menuElementName);
+        const burgerMenu = burgerMenuWrapper.querySelector('.burger-menu');
         const overlay = document.querySelector('.animated-nav-wrapper');
 
-        burgerMenu.addEventListener('click', () => {
+        burgerMenuWrapper.addEventListener('click', () => {
             burgerMenu.classList.toggle('open');
 
             if (burgerMenu.classList.contains('open')) {
